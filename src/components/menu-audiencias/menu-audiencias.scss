@@ -4,12 +4,32 @@
   list-style: none;
   &__item {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    &::after {
+      content: '';
+      background-color: #fff;
+      border-radius: 50%;
+      height: 5px;
+      width: 5px;
+      position: absolute;
+      right: -1em;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
     a {
       text-decoration: none;
-      color: #383838;
-      font-size: 18px;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 0;
+      transition: all .2s linear;
       &:hover {
-        opacity: .9;
+        opacity: .7;
       }
     }
   }

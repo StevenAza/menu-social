@@ -27,7 +27,6 @@ export class MenuAudiencias {
   ]
   render() {
     return (
-      <div>
         <ul class="menu-audiencias">
             {
               this.menuItems.map((item) => 
@@ -36,7 +35,6 @@ export class MenuAudiencias {
                 </li>
               )}
         </ul>
-      </div>
     );
   }
 }
